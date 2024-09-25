@@ -1,0 +1,556 @@
+/*ANA JÚLIA RIBEIRO FERREIRA 2C - 21.08.24*/
+
+
+
+
+/*ESTRUTURA BÁSICA*/
+
+:root {
+    --laranja-principal:#FF6A00;
+}
+
+* {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    line-height: 1.5;
+    user-select: none;
+}
+
+.appear p,
+.appear button {
+    animation: appear 5s;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Nanum Gothic Coding", system-ui;
+    margin: 1.5% 10% 5% 10%;
+    cursor: default;
+    max-width: 1000px;
+}
+
+
+header {
+    margin: 1.5% 0 2% 0;
+}
+
+
+.info {
+    text-align: center;
+    margin: 240px 0 160PX 0;
+
+}
+
+p {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/*PENSAMENTOS*/
+
+.popup img {
+    height: 80px;
+    margin-right: 2%;
+}
+
+.popup {
+    animation: popup 20s forwards, come 5s;
+    background-color: black;
+    border: white solid 1px;
+    padding: 2%;
+    margin: 50px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30%;
+    width: 200px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BOTÕES E CONTROLES*/
+
+button {
+    background-color: rgb(0, 0, 0);
+    font-family: "Nanum Gothic Coding", system-ui;
+    width: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: justify;
+    padding: 1%;
+}
+
+button:hover {
+    border: solid 1px var(--laranja-principal);
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0 0 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+    flex-shrink: 0;
+}
+
+#save-button,
+#reset-button {
+    font-size: 15px;
+    border: solid 1px #ffffff;
+    background-color: black;
+    opacity: 0.5;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+}
+
+
+#save-button:hover,
+#reset-button:hover {
+    border: solid 1px var(--laranja-principal);
+    width: 100px;
+    height: 70px;
+    opacity: 1.0;
+}
+
+#reset-button.disabled {
+    border: solid 1px #ffffff;
+    opacity: 0.2;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/*PASSO 0*/
+.como.jogar {
+    animation: appear 5s;
+    font-size: 20px;
+    margin: 0 200px 0 200px;
+}
+
+.como.jogar p {
+    margin-top: 150px;
+}
+
+.como.jogar button {
+    animation: bigandsmall 3s infinite;
+    font-size: 15px;
+    border: none;
+    color: #ffffff;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.como.jogar button:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: url('lupa.png'), pointer;
+    color: var(--laranja-principal);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*IMAGENS*/
+
+main img {
+    height: 180px;
+    justify-content: center;
+    padding-bottom: 1%;
+    margin: auto;
+    display: block;
+
+}
+
+.objeto:hover {
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MENU*/
+
+.redirect img {
+    height: 60px;
+}
+
+.redirect img:hover {
+    animation: bounce 2s;
+}
+
+.menu {
+    display: flex;
+}
+
+
+.titulo {
+    margin: 30px 0 0 0;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*AUDIO MUTAR E DESMUTAR*/
+
+.muteunmute {
+    height: 25px;
+    opacity: 0.2;
+    position: absolute;
+    right: 10%;
+    top: 8%;
+    cursor: pointer;
+}
+
+.muteunmute:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+input#un-mute {
+    display: none;
+
+}
+
+.unmute img {
+    display: none;
+}
+
+input#un-mute:checked~.unmute img {
+    display: initial;
+}
+
+input#un-mute:checked~.mute img {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*JUNÇÃO AO JS*/
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+/*WEBKIT UNIVERSAL SCROLLBARS*/
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 70px;
+    size: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.159);
+    ;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANIMAÇÕES*/
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes come {
+    from {
+        transform: translateX(150%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+
+    o {
+        opacity: 100%;
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes bigandsmall {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.menu a,
+menu img {
+    margin: 10px 10px 0 0;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+
+@media (max-width: 768px) {
+
+    p {
+        font-size: 20px;
+    }
+
+
+    .header {
+        margin: 0 0 90px 0;
+    }
+
+    .titulo {
+        font-size: 15px;
+    }
+
+    .menu {
+        margin: 20px 0 0 0;
+        padding-bottom: 2%;
+    }
+
+    main img {
+        height: 150px;
+        margin: auto;
+        justify-content: center;
+        display: block;
+    }
+
+    #mutediv {
+        opacity: 0;
+        display: none;
+    }
+
+    button {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: solid 1px white;
+        padding: 3%;
+        font-size: 10px;
+    }
+
+    button:hover {
+        border: solid 1px var(--laranja-principal);
+        width: 100%;
+    }
+
+
+    .logochapeu {
+        margin: 0 0 0 40px;
+    }
+
+
+    .passo.ativo {
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .passo.ativo button {
+        font-size: 15px;
+    }
+
+
+
+    .container {
+        gap: 10px;
+        margin: 100px 0 100px 0;
+        position: relative;
+        flex-shrink: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #save-button,
+    #reset-button {
+        font-size: 15px;
+        border: solid 1px #ffffff;
+        background-color: black;
+        opacity: 0.7;
+        width: 60%;
+        height: 70px;
+    }
+
+    #save-button {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        top: 100%;
+    }
+
+    #reset-button {
+        position: absolute;
+        bottom: -155px;
+        left: 0;
+    }
+
+    #save-button:hover,
+    #reset-button:hover {
+        border: solid 1px var(--laranja-principal);
+        width: 60%;
+        height: 70px;
+        opacity: 1.0;
+    }
+
+    #reset-button.disabled {
+        border: solid 1px #ffffff;
+        opacity: 0.2;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    .corpodopasso {
+        margin: 0 0 0 50px;
+    }
+
+    .como.jogar p {
+        margin-top: 0;
+    }
+    .como.jogar {
+        margin: 0;
+        padding: 0;
+    }
+    .como.jogar button {
+        font-size: 15px;
+        margin: auto; 
+        color: white;
+        opacity: 1.0;
+    }
+}

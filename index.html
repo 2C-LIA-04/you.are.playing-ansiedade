@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--ANA JÚLIA RIBEIRO FERREIRA 2C - 21.08.24 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="videogameorange.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+
+
+    <title>ANSIEDADE</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="menu">
+
+            <a class="redirect" href="https://2c-lia-04.github.io/loading.screen-ansiedade/">
+                <img class="logochapeu" g src="detetive.png" alt="homenzinho de chapéu"
+                    title="redirecionamento para a tela de loading">
+            </a>
+
+            <h1 class="titulo">ANSIEDADE: ECOS DA VERDADE</h1>
+
+
+
+
+
+
+            <!--AUDIO MUTAR E DESMUTAR-->
+
+            <div class="configurações de audio" id="mutediv">
+                <audio id="audio" src="backgroundsong.mp3" autoplay loop></audio>
+
+                <input type="checkbox" name="un-mute" id="un-mute" checked>
+                <label for="un-mute" class="unmute">
+                    <img class="muteunmute" src="unmuted.png" alt="Speaker.svg">
+
+                </label>
+                <label for="un-mute" class="mute">
+                    <img class="muteunmute" src="muted.png" alt="Mute.svg">
+                </label>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <main>
+        <div class="appear">
+            <section class="corpodopasso">
+
+
+
+                <section class="como jogar">
+                    <div class="passo ativo" id="passo-0">
+                        <p>Você é um detetive particular especialista em crimes contra ricaços. Com um passado invejável
+                            e uma fortuna discreta, você agora vive uma vida tranquila. Agora, você está tentando voltar
+                            a rotina de investigações depois de um grande período de férias.</p>
+                        <button class="btn-proximo" data-proximo="1">COMECE A INVESTIGAR.</button>
+                    </div>
+                </section>
+
+
+
+
+                <div class="passo" id="passo-1">
+                    <p>Você está em seu escritório particular. Com um padrão agudo que quebra o silêncio do ambiente,
+                        você nota o telefone reverberando. Cada toque se resume a expectativa e ansiedade. Você está
+                        recebendo uma ligação: talvez mais um mistério para solucionar.</p><br>
+                    <button class="btn-proximo" data-proximo="2">></button><br>
+                </div>
+
+
+                <div class="passo" id="passo-2">
+                    <p>Você tem um telefone fixo que se recusa a trocar por um smartphone. Primeiro, porque você é das
+                        antigas, e porque sente que perderia a privacidade investigando seus casos. Se manter
+                        incomunicável tem seu preço, mas o ajuda a se concentrar no que realmente importa.</p><br>
+                    <button class="btn-proximo" data-proximo="3">></button><br>
+                </div>
+
+
+                <div class="passo" id="passo-3">
+                    <p>Aproveitando os últimos segundos antes de pegar um novo caso, você respira fundo. É sempre como
+                        se fosse a primeira vez.</p><br>
+                    <button class="btn-proximo" data-proximo="4">Atender o telefone.</button><br><br>
+                </div>
+
+
+                <div class="passo" id="passo-4">
+                    <img class="objeto"src="telefone.png" title="Você está em ligação no telefone fixo">
+                    <p>A príncipio, você escuta uma voz masculina no fundo da chamada, que logo é cortada para dar lugar a alguém diferente. "Alô?" você escuta uma voz feminina robotizada, a ligação parece fraca. Permanecendo quieto, você dá brecha para que ela fale.<br> "Você é aquele detetive particular amigo do Carlos? Olha, eu tenho pensado muito, e decidi te pedir um favor."
+                    </p><br>
+                    <button class="btn-proximo" data-proximo="5">— Prossiga...</button><br><br>
+                    <button class="btn-proximo" data-proximo="6">— Eu e carlos não somos amigos.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-5">
+                    <img class="objeto"src="telefone.png" title="Você está em ligação no telefone fixo">
+                    <p>"Olha, não posso entrar em detalhes, mas...é importante. Se puder manter a discrição por agora e
+                        esperar que eu entre em contato... a recompensa será muito boa."</p>
+                    <button class="btn-proximo" data-proximo="7">— De quanto estamos falando?</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-6">
+                    <img class="objeto"src="telefone.png" title="Você está em ligação no telefone fixo">
+                    <p>"Sim, ele mencionou algumas vezes que vocês não se davam bem. Disse que é porque você deve muito
+                        a ele."<br> A mulher falava em um tom esquisito, como se estive prestes a constatar algo. Você,
+                        por sua vez, parecia ter notado o tom passivo-agressivo e estava respondendo como tal.</p>
+                    <button class="btn-proximo" data-proximo="8">— Isso é entre mim e ele.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-7">
+                    <img class="objeto"src="telefone.png" title="Você está em ligação no telefone fixo">
+                    <p>"O suficiente pra qualquer coisa que imaginar."</p>
+                    <button class="btn-proximo" data-proximo="9">— Isso me interessa bastante, vou ter certeza de ouvir
+                        seu caso quando estiver pronta. Só não use o nome “Carlos” na próxima vez.</button><br><br>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="passo" id="passo-8">
+                    <img class="objeto"src="telefone.png" title="Você está em ligação no telefone fixo">
+                    <p>"Se você é mesmo inteligente, vai entender que minha ótima relação com o Carlos vale muito
+                            mais do que a sua com ele. Acho que você fala demais pra alguém que só deveria ouvir e
+                            investigar.”</p>
+                    <button class="btn-proximo" data-proximo="10">— Você tem muita personalidade pra alguém que até
+                        agora
+                        parecia estar implorando por um favor. Acho isso muito curioso.</button><br><br>
+                    <button class="btn-proximo" data-proximo="11">— Vai pro inferno.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-9">
+                    <img class="objeto"src="cigarro.png" title="Cigarros">
+
+                    <p>Você desliga o telefone, encaixando-o no gancho e puxando um cigarro do bolso. Você tem certeza
+                        de que algo está prestes a acontecer.</p>
+                    <button class="btn-proximo" data-proximo="13">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-10">
+                    <img class="objeto"src="telefone.png" title="Você está em ligação no telefone fixo">
+                    <p>"Isso é um sim?"
+                        Você confirma.</p>
+                    <button class="btn-proximo" data-proximo="12">— Se carlos te disse tanto, tenho certeza de que já
+                        conhece meu endereço. Me visite e vamos conversar sobre isso.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-11">
+                    <img class="objeto"src="cigarro.png" title="Cigarros">
+                    <p>Você a escuta protestar, mas é mais rápido e desliga o telefone, encaixando-o no gancho e puxando
+                        um
+                        cigarro do bolso.</p>
+                    <button class="btn-proximo" data-proximo="13">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-12">
+                    <img class="objeto"src="cigarro.png" title="Cigarros">
+                    <p>Você desliga o telefone, encaixando-o no gancho e puxando um cigarro do bolso. Você tem certeza
+                        de
+                        que algo está prestes a acontecer.</p>
+                    <button class="btn-proximo" data-proximo="13">></button><br><br>
+                </div>
+
+                <!----------------------------------------------------------------------------------------------------------------------------------->
+
+                <div class="passo" id="passo-13">
+                    <p>No período de algumas semanas, você continua sua vida, organizando finanças e comparecendo a
+                        eventos.
+                        Você normalmente arranja oportunidades de trabalho através de contatos. Em eventos como esses,
+                        você
+                        entrega cartões de visita, pessoas ricas recomendam seus serviços de investigação para outras
+                        pessoas ricas, o que gera um lucro alto e instantâneo. Geralmente, você investiga casos de
+                        traição e
+                        golpes comerciais. Como um fofoqueiro nato, você ama seu trabalho, porque ganha dinheiro e sabe
+                        de
+                        tudo sobre as fofocas do lado rico da cidade.</p>
+                    <button class="btn-proximo" data-proximo="14">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-14">
+                    <img classo="objeto" src="porta.png" title="Porta de entrada">
+                    <p>Nesse exato momento, você está sentado na poltrona de sua sala de estar. Anotando algumas
+                        observações
+                        que teve durante essas semanas, você escuta a campainha do casarão soar.
+                    </p>
+                    <button class="btn-proximo" data-proximo="18">Abrir a porta.</button><br><br>
+                    <button class="btn-proximo" data-proximo="15">Ignorar.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-15">
+                    <img classo="objeto" src="porta.png" title="Porta de entrada">
+                    <p>Seja por cansaço ou irritação, você decide não atender. Seja lá quem for, essa pessoa insiste,
+                        pressionando a campainha.</p>
+                    <button class="btn-proximo" data-proximo="18">Abrir a porta.</button><br><br>
+                    <button class="btn-proximo" data-proximo="16">Ignorar.</button><br><br>
+                </div>
+
+
+                <div class="passo" id="passo-16">
+                    <img classo="objeto" src="porta.png" title="Porta de entrada">
+                    <p>Mesmo estando do outro lado do cômodo, você consegue ouvir xingamenos intercalados ao barulho
+                        irritante da campainha.</p>
+                    <button class="btn-proximo" data-proximo="18">Abrir a porta.</button><br><br>
+                    <button class="btn-proximo" data-proximo="17">Ignorar.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-17">
+                    <img classo="objeto" src="porta.png" title="Porta de entrada">
+                    <p>Você escuta batidas por cerca de alguns minutos. Estão esmurrando sua porta de entrada caríssima
+                        e
+                        você esta começando a se preocupar. Agora, você se vê encurralado e decide abrir a porta, antes
+                        que
+                        a derrubem por bem ou por mal. </p>
+                    <button class="btn-proximo" data-proximo="18">Abrir a porta.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-18">
+                    <p>Você decide se levantar da poltrona e atender a porta. Você passa pelo hall de entrada, onde
+                        alguns
+                        quadros caros estão dispostos nas paredes e plantas tornam o ambiente mais acolhedor. Antes de
+                        abrir, você observa através do olho mágico. </p>
+                    <button class="btn-proximo" data-proximo="19">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-19">
+            <img class="objeto"src="chave.png" title="Chave de casa">
+                    <p>Você é capaz de ver uma mulher, e a única caracerística que pode enxergar claramente é seu cabelo
+                        chanel escuro. Rodando a maçaneta, você escancara a porta e vê seu rosto pela primeira vez.</p>
+                    <button class="btn-proximo" data-proximo="20">></button><br><br>
+                </div>
+
+
+                <div class="passo" id="passo-20">
+                    <img class="personagem" src="alice.png">
+                    <p>Ela aparenta ter quarenta anos, e veste uma blusinha simples, além de argolas douradas. Em
+                        seu ombro, carrega uma bolsinha, grande o suficiente para carregar apenas documentos.</p>
+                    <button class="btn-proximo" data-proximo="21">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-21">
+                    <img class="personagem" src="alice.png">
+                    <p>“É um prazer encontrá-lo pessoalmente depois de ouvir tanto sobre você”. Sorriu. Você a observou
+                        bem, dessa vez de corpo inteiro. Usava sapatilhas simples e elegantes, além de uma calça clara
+                        de
+                        alfaiataria. Você tentou achar algum tipo de detalhe destoando nela, mas tudo parecia
+                        perfeito...Até
+                        demais.</p>
+                    <button class="btn-proximo" data-proximo="22">Não deve ter ouvido bem, eu presumo.</button><br><br>
+                </div>
+
+
+                <div class="passo" id="passo-22">
+                    <img class="personagem" src="alice.png">
+                    <p>Você fala como uma brincadeira para quebrar o clima. É sempre importante conquistar a confiança
+                        do
+                        cliente antes de comçar o caso. É como se ficassem mais falantes e os bolsos se abrissem mais.
+                    </p>
+                    <button class="btn-proximo" data-proximo="23">Desculpe, quem é você?</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-23">
+                    <img class="personagem" src="alice.png" title="Alice">
+                    <p>”Alice. Nos falamos por telefone.”</p>
+                    <button class="btn-proximo" data-proximo="24">Não achei que fosse chegar a vê-la.
+                        Entra.</button><br><br>
+                </div>
+
+                <div class="passo" id="passo-24">
+                    <img class="personagem" src="alice.png" title="Alice">
+                    <p>Você espera que ela entre, e então fecha a porta. “Por que disso?”, ela diz. Você responde que
+                        ela
+                        demorou mais do que o comum para entrar em contato, o que a emudece. Tudo desde que se falaram
+                        pelo
+                        telefone não parece próximo do comum, para ser honesto.</p>
+                    <button class="btn-proximo" data-proximo="25">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-25">
+                    <p>Seu tom, seus sussuros através da linha, seu jeito incrivelmente ajeitado, e principalmente a
+                        demora
+                        em solicitar o serviço. Ninguém dá a cara a tapa em contatar um detetive particular e então
+                        deixa
+                        isso quieto por semanas.</p>
+                    <button class="btn-proximo" data-proximo="26">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-26">
+                    <p>“Vou direto ao assunto.” Iniciou, parecendo reunir toda sua coragem. “Algo de errado está
+                        acontecendo.”</p>
+                    <button class="btn-proximo" data-proximo="27">></button><br><br>
+                </div>
+
+                <div class="passo" id="passo-27">
+                    <p class="info">EM BREVE MAIS ATUALIZAÇÕES!</p>
+                </div>
+            </section>
+
+
+            <div class="container">
+                <button id="save-button">SALVAR PROGRESSO</button>
+                <button id="reset-button">APAGAR PROGRESSO</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
