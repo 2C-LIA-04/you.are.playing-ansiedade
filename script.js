@@ -1,3 +1,4 @@
+// ANA JÚLIA RIBEIRO FERREIRA 2C - 21.08.24
 // carregar jogo
 function loadGame() {
     const savedStep = localStorage.getItem('currentStep');
