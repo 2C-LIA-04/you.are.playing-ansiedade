@@ -103,7 +103,3 @@ window.onload = loadGame;
 
 
 
-//ao clicar
-window.onclick = function () {
-    document.getElementById('audiointro').play();
-};
